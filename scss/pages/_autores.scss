@@ -1,0 +1,188 @@
+.portada-autores{
+    height: 100vh;
+    background-image: url(/images/Dale-Carnegie.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-shadow: 15px 10px 5px;
+    font-family: "Roboto";   
+}
+
+
+.section1-autores{
+    padding: 8px;
+    font-family: "Roboto";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    color: white;
+    background-color:black;
+}
+
+/*----secciones de autores----*/
+
+/*---jordan peterson--*/
+
+.autor-jp{
+    background-color: $color-fondo;
+    color: white;
+    font-family: "Roboto";
+    h3{
+        text-align: center;
+        padding-top: 7px;
+    }
+    p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.autor-jp img{
+    width: 100%;
+}
+
+/*--spencer johnson--*/
+.autor-sj{
+    background-color: $color-fondo;
+    color: white;
+    font-family: "Roboto";
+    h3{
+        text-align: center;
+        padding-top: 7px;
+    }
+    p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.autor-sj img{
+    width: 100%;
+}
+
+/*--dale carnegie--*/
+
+.autor-dc{
+    background-color: $color-fondo;
+    color: white;
+    font-family: "Roboto";
+    h3{
+        text-align: center;
+        padding-top: 7px;
+    }
+    p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.autor-dc img{
+    width: 100%;
+}
+
+/*Mark Manson*/
+
+.autor-mm{
+    background-color: $color-fondo;
+    color: white;
+    font-family: "Roboto";
+    h3{
+        text-align: center;
+        padding-top: 7px;
+    }
+    p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.autor-mm img{
+    width: 100%;
+}
+
+
+
+/*ECKhart Tolle*/
+
+.autor-et{
+    background-color: $color-fondo;
+    color: white;
+    font-family: "Roboto";
+    h3{
+        text-align: center;
+        padding-top: 7px;
+    }
+    p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.autor-et img{
+    width: 100%;
+}
+/*Steven Pressfield*/
+
+.autor-sp{
+    background-color: $color-fondo;
+    color: white;
+    font-family: "Roboto";
+    h3{
+        text-align: center;
+        padding-top: 7px;
+    }
+    p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.autor-sp img{
+    width: 100%;
+}
+
+
+/*Carol Dweck*/
+.autor-cd{
+    background-color: $color-fondo;
+    color: white;
+    font-family: "Roboto";
+    h3{
+        text-align: center;
+        padding-top: 7px;
+    }
+    p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.autor-cd img{
+    width: 100%;
+}
+
+/*Ray Dalio*/
+
+.autor-rd{
+    background-color: $color-fondo;
+    color: white;
+    font-family: "Roboto";
+    h3{
+        text-align: center;
+        padding-top: 7px;
+    }
+    p{
+        padding: 5px;
+        text-align: center;
+    }
+}
+
+.autor-rd img{
+    width: 100%;
+}

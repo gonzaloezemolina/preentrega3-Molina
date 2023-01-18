@@ -1,0 +1,375 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(/css/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+}
+@font-face {
+  font-family: "Sand";
+  src: url(/css/Quicksand-VariableFont_wght.ttf);
+}
+header {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  text-align: center;
+  font-family: "Roboto";
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+}
+
+@media (min-width: 1100px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10%;
+  }
+  header ul {
+    display: flex;
+    gap: 30px;
+  }
+}
+footer {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Sand";
+}
+
+/*----Portada inicio---*/
+.portada-index {
+  height: 100vh;
+  background-image: url(/images/janovich-ordinarymen-still-08.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  color: white;
+  text-shadow: 20px 10px 4px;
+}
+
+/*--Seccion quienes somos--*/
+.section1-index {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.section1-index h3 {
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 14px;
+  padding-bottom: 18px;
+}
+.section1-index p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  padding-bottom: 15px;
+  margin-left: 8px;
+}
+
+.section1-index img {
+  width: 100%;
+}
+
+/*---seccion-frasejp--*/
+.seccion-frase-jpeterson {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+}
+
+.seccion-frase-jpeterson {
+  height: 100vh;
+  background-image: url(/images/1\ p_NegfjF8A7rrHpq0B9dJQ.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*----seccion nuestra mision----*/
+.section2-index {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.section2-index h3 {
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 14px;
+  padding-bottom: 18px;
+}
+.section2-index p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  padding-bottom: 15px;
+  margin-left: 8px;
+}
+
+.logo {
+  padding-top: 15px;
+  text-align: center;
+}
+
+/*---Seccion contactanos---*/
+.contactanos {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-family: "Roboto";
+}
+.contactanos h2 {
+  font-size: 32px;
+  padding-bottom: 25px;
+}
+
+.contactos {
+  background-color: black;
+  color: white;
+  font-family: "Roboto";
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactos li {
+  list-style: none;
+}
+
+/*formulario*/
+form {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  font-family: "Roboto";
+}
+
+.nombre-correo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.btn-contact {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-contact {
+  color: red;
+}
+
+.portada-autores {
+  height: 100vh;
+  background-image: url(/images/Dale-Carnegie.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  text-shadow: 15px 10px 5px;
+  font-family: "Roboto";
+}
+
+.section1-autores {
+  padding: 8px;
+  font-family: "Roboto";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15px;
+  color: white;
+  background-color: black;
+}
+
+/*----secciones de autores----*/
+/*---jordan peterson--*/
+.autor-jp {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Roboto";
+}
+.autor-jp h3 {
+  text-align: center;
+  padding-top: 7px;
+}
+.autor-jp p {
+  padding: 5px;
+  text-align: center;
+}
+
+.autor-jp img {
+  width: 100%;
+}
+
+/*--spencer johnson--*/
+.autor-sj {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Roboto";
+}
+.autor-sj h3 {
+  text-align: center;
+  padding-top: 7px;
+}
+.autor-sj p {
+  padding: 5px;
+  text-align: center;
+}
+
+.autor-sj img {
+  width: 100%;
+}
+
+/*--dale carnegie--*/
+.autor-dc {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Roboto";
+}
+.autor-dc h3 {
+  text-align: center;
+  padding-top: 7px;
+}
+.autor-dc p {
+  padding: 5px;
+  text-align: center;
+}
+
+.autor-dc img {
+  width: 100%;
+}
+
+/*Mark Manson*/
+.autor-mm {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Roboto";
+}
+.autor-mm h3 {
+  text-align: center;
+  padding-top: 7px;
+}
+.autor-mm p {
+  padding: 5px;
+  text-align: center;
+}
+
+.autor-mm img {
+  width: 100%;
+}
+
+/*ECKhart Tolle*/
+.autor-et {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Roboto";
+}
+.autor-et h3 {
+  text-align: center;
+  padding-top: 7px;
+}
+.autor-et p {
+  padding: 5px;
+  text-align: center;
+}
+
+.autor-et img {
+  width: 100%;
+}
+
+/*Steven Pressfield*/
+.autor-sp {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Roboto";
+}
+.autor-sp h3 {
+  text-align: center;
+  padding-top: 7px;
+}
+.autor-sp p {
+  padding: 5px;
+  text-align: center;
+}
+
+.autor-sp img {
+  width: 100%;
+}
+
+/*Carol Dweck*/
+.autor-cd {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Roboto";
+}
+.autor-cd h3 {
+  text-align: center;
+  padding-top: 7px;
+}
+.autor-cd p {
+  padding: 5px;
+  text-align: center;
+}
+
+.autor-cd img {
+  width: 100%;
+}
+
+/*Ray Dalio*/
+.autor-rd {
+  background-color: rgb(24, 22, 22);
+  color: white;
+  font-family: "Roboto";
+}
+.autor-rd h3 {
+  text-align: center;
+  padding-top: 7px;
+}
+.autor-rd p {
+  padding: 5px;
+  text-align: center;
+}
+
+.autor-rd img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

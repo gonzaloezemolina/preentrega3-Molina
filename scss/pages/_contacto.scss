@@ -1,0 +1,63 @@
+/*---Seccion contactanos---*/
+.contactanos{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 40px;
+    font-family: "Roboto";
+    h2{
+        font-size: 32px;
+        padding-bottom: 25px;
+    }
+}
+
+.contactos{
+    background-color: black;
+    color: white;
+    font-family: "Roboto";
+    padding-top: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    li{
+        list-style: none;
+    }
+}
+
+
+/*formulario*/
+form{
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 40px;
+
+    font-family: "Roboto";
+}
+
+.nombre-correo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.textarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 10px;
+}
+
+.btn-contact{
+    padding-top: 10px;
+
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.btn-contact{
+    color: red;
+}
