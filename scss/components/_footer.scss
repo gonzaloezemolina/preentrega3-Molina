@@ -3,3 +3,45 @@ footer{
     color: white;
     font-family: "Sand";
 }
+
+/*--img footer--*/
+.img-footer{
+    text-align: center;
+    padding: 10px;
+}
+
+/*--titulo footer--*/
+.titulo-footer{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 35px;
+}
+
+/*--links footer--*/
+.links-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ul li{
+        list-style: none;
+    }
+}
+
+
+/*---redes del footer--*/
+.redes__footer{
+    h4{
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+.redes__iconos{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.derechos-footer{
+    background-color: black;
+    text-align: center;
+}
+

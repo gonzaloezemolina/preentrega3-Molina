@@ -1,7 +1,7 @@
 /*---Seccion contactanos---*/
 .contactanos{
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
     padding-top: 40px;
     font-family: "Roboto";
@@ -11,53 +11,64 @@
     }
 }
 
+/*icono*/
 .contactos{
-    background-color: black;
-    color: white;
+    background-color: rgb(255, 253, 253);
+    color: rgb(0, 0, 0);
     font-family: "Roboto";
-    padding-top: 40px;
-
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    li{
-        list-style: none;
+    p{
+        padding-left: 5px;
+    }
+    .icono-contacto{
+        width: 35px;
+        height: 35px;
+        border-radius: 20px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 
 /*formulario*/
-form{
-    background-color: black;
-    padding-top: 30px;
-    padding-bottom: 40px;
+.form-contacto{
+    width: 100%;
+    background-color:white;
+    padding: 30px;
+    margin: auto;
+    border-radius: 4px;
+    font-family: "Roboto";
+    color: black;
+}
 
+.gap-contact{
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid black;
+    font-family: "Roboto";
+    font-size: 15px;
+}
+
+.form-contacto textarea{
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
     font-family: "Roboto";
 }
 
-.nombre-correo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.textarea{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding-top: 10px;
-}
-
-.btn-contact{
-    padding-top: 10px;
-
-    display: flex;
-    justify-content:center;
-    align-items: center;
-}
-
-.btn-contact{
-    color: red;
+.form-contacto .btn{
+    height: 25px;
+    width: 20%;
+    margin-top: 7px;
+    border-radius: 4px;
+    border: 1px solid black;
+    font-family: "Roboto";
 }
