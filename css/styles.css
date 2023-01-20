@@ -6,11 +6,11 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url(/css/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+  src: url(../css/RobotoSerif-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
 }
 @font-face {
   font-family: "Sand";
-  src: url(/css/Quicksand-VariableFont_wght.ttf);
+  src: url(../css/Quicksand-VariableFont_wght.ttf);
 }
 header {
   background-color: rgb(0, 0, 0);
@@ -90,6 +90,12 @@ footer {
   text-align: center;
 }
 
+@media (min-width: 700px) {
+  .contenedor-foot {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 .tarjeta {
   width: 200px;
   height: 400px;
@@ -133,7 +139,7 @@ footer {
 /*----Portada inicio---*/
 .portada-index {
   height: 100vh;
-  background-image: url(/./images/janovich-ordinarymen-still-08.jpg);
+  background-image: url(../images/janovich-ordinarymen-still-08.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -182,7 +188,7 @@ footer {
 
 .seccion-frase-jpeterson {
   height: 100vh;
-  background-image: url(/./images/1\ p_NegfjF8A7rrHpq0B9dJQ.jpeg);
+  background-image: url(../images/1\ p_NegfjF8A7rrHpq0B9dJQ.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -288,9 +294,14 @@ footer {
   font-family: "Roboto";
 }
 
+@media (min-width: 540px) {
+  .form-contacto {
+    width: 50%;
+  }
+}
 .portada-autores {
   height: 100vh;
-  background-image: url(/./images/Dale-Carnegie.jpg);
+  background-image: url(../images/Dale-Carnegie.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -469,7 +480,7 @@ footer {
 /*portada libreria*/
 .portada-libreria {
   height: 100vh;
-  background-image: url(/./images/HD-wallpaper-black-and-white-book-page.jpg);
+  background-image: url(../images/HD-wallpaper-black-and-white-book-page.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -493,6 +504,91 @@ footer {
 /*productos*/
 .productos {
   background-color: white;
+}
+
+/*---titulo nosotros--*/
+.titulo-nosotros {
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-family: "Roboto";
+  padding-top: 30px;
+}
+
+.logo-nosotros {
+  width: 100%;
+  padding-top: 10px;
+  background-color: black;
+  text-align: center;
+}
+
+.texto1-nosotros {
+  padding: 10px;
+  font-family: "Roboto";
+  font-size: 18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+/*frase1-nosotros*/
+.frase1-nosotros {
+  height: 100vh;
+  background-image: url(../images/channels4_profile.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 25px;
+}
+
+/*segundo titulo*/
+.titulo2-nosotros {
+  padding: 15px;
+  font-family: "Roboto";
+  text-align: center;
+  background-color: rgb(24, 22, 22);
+  color: white;
+}
+.titulo2-nosotros h3 {
+  padding-bottom: 7px;
+}
+
+/*frase2*/
+.frase2-nosotros {
+  height: 100vh;
+  background-image: url(../images/dale-carnegie-biography.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 25px;
+  font-family: "Roboto";
+}
+.frase2-nosotros p {
+  background-color: white;
+  opacity: 0.3;
+}
+
+/*tercer titulo*/
+.titulo3-nosotros {
+  padding: 15px;
+  font-family: "Roboto";
+  text-align: center;
+  background-color: rgb(24, 22, 22);
+  color: white;
+}
+.titulo3-nosotros h3 {
+  padding-bottom: 7px;
 }
 
 /*# sourceMappingURL=styles.css.map */

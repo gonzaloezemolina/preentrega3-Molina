@@ -45,3 +45,11 @@ footer{
     text-align: center;
 }
 
+@media(min-width:700px){
+    .contenedor-foot{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+

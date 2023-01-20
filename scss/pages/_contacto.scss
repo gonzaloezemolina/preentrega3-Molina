@@ -72,3 +72,10 @@
     border: 1px solid black;
     font-family: "Roboto";
 }
+
+
+@media(min-width:540px){
+    .form-contacto{
+        width: 50%;
+    }
+}

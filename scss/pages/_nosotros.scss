@@ -1,0 +1,91 @@
+/*---titulo nosotros--*/
+.titulo-nosotros{
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-size: 20px;
+    font-family: "Roboto";
+    padding-top: 30px;
+}
+
+.logo-nosotros{
+    width: 100%;
+    padding-top: 10px;
+    background-color: black;
+    text-align: center;
+}
+
+.texto1-nosotros{
+    padding: 10px;
+    font-family: "Roboto";
+    font-size: 18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+/*frase1-nosotros*/
+
+.frase1-nosotros{
+    height: 100vh;
+    background-image: url(../images/channels4_profile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 25px;
+}
+
+/*segundo titulo*/
+.titulo2-nosotros{
+    padding: 15px;
+    font-family:"Roboto";
+    text-align: center;
+    background-color:$color-fondo;
+    color:white;
+    h3{
+        padding-bottom: 7px;
+    }
+
+}
+
+/*frase2*/
+.frase2-nosotros{
+    height: 100vh;
+    background-image: url(../images/dale-carnegie-biography.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    font-family: "Roboto";
+    p{
+        background-color: white;
+        opacity: 0.3;
+    }
+}
+
+
+/*tercer titulo*/
+
+.titulo3-nosotros{
+    padding: 15px;
+    font-family:"Roboto";
+    text-align: center;
+    background-color:$color-fondo;
+    color:white;
+    h3{
+        padding-bottom: 7px;
+    }
+
+}
