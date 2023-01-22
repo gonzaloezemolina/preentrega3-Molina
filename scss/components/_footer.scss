@@ -50,6 +50,16 @@ footer{
         display: grid;
         grid-template-columns: repeat(3,1fr);
     }
+    .titulo-footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto";
+        font-size: 35px;
+    }
+    .links-footer{
+        font-size: 18px;
+    }
 }
 
 

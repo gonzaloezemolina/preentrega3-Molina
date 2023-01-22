@@ -30,7 +30,7 @@
 /*---jordan peterson--*/
 
 .autor-jp{
-    background-color: $color-fondo;
+    background-color: black;
     color: white;
     font-family: "Roboto";
     h3{
@@ -38,8 +38,10 @@
         padding-top: 7px;
     }
     p{
-        padding: 5px;
-        text-align: center;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -49,7 +51,7 @@
 
 /*--spencer johnson--*/
 .autor-sj{
-    background-color: $color-fondo;
+    background-color: black;
     color: white;
     font-family: "Roboto";
     h3{
@@ -57,8 +59,10 @@
         padding-top: 7px;
     }
     p{
-        padding: 5px;
-        text-align: center;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -69,7 +73,7 @@
 /*--dale carnegie--*/
 
 .autor-dc{
-    background-color: $color-fondo;
+    background-color: black;
     color: white;
     font-family: "Roboto";
     h3{
@@ -77,8 +81,10 @@
         padding-top: 7px;
     }
     p{
-        padding: 5px;
-        text-align: center;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -89,7 +95,7 @@
 /*Mark Manson*/
 
 .autor-mm{
-    background-color: $color-fondo;
+    background-color: black;
     color: white;
     font-family: "Roboto";
     h3{
@@ -97,8 +103,10 @@
         padding-top: 7px;
     }
     p{
-        padding: 5px;
-        text-align: center;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -111,7 +119,7 @@
 /*ECKhart Tolle*/
 
 .autor-et{
-    background-color: $color-fondo;
+    background-color: black;
     color: white;
     font-family: "Roboto";
     h3{
@@ -119,8 +127,10 @@
         padding-top: 7px;
     }
     p{
-        padding: 5px;
-        text-align: center;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -130,7 +140,7 @@
 /*Steven Pressfield*/
 
 .autor-sp{
-    background-color: $color-fondo;
+    background-color: black;
     color: white;
     font-family: "Roboto";
     h3{
@@ -138,8 +148,10 @@
         padding-top: 7px;
     }
     p{
-        padding: 5px;
-        text-align: center;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -150,7 +162,7 @@
 
 /*Carol Dweck*/
 .autor-cd{
-    background-color: $color-fondo;
+    background-color: black;
     color: white;
     font-family: "Roboto";
     h3{
@@ -158,8 +170,10 @@
         padding-top: 7px;
     }
     p{
-        padding: 5px;
-        text-align: center;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
@@ -170,7 +184,7 @@
 /*Ray Dalio*/
 
 .autor-rd{
-    background-color: $color-fondo;
+    background-color: black;
     color: white;
     font-family: "Roboto";
     h3{
@@ -178,11 +192,219 @@
         padding-top: 7px;
     }
     p{
-        padding: 5px;
-        text-align: center;
+        padding: 7px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
 .autor-rd img{
     width: 100%;
+}
+
+/*700px*/
+
+@media(min-width:700px){
+    .autor-jp{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+
+        p{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .autor-sj{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+
+        p{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .autor-dc{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+
+        p{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .autor-mm{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+
+        p{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .autor-et{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+
+        p{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .autor-sp{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+
+        p{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .autor-cd{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+
+        p{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    }
+
+    .autor-rd{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+
+        p{
+            padding-top: 40px;
+            padding-bottom: 40px;
+            text-align: center;
+        }
+    }
+}
+
+/*1100px*/
+
+@media(min-width:1100px){
+    .autor-jp{
+        h3{
+            font-size: 35px;
+        }
+        p{
+            padding: 70px;
+            font-size: 20px;
+        }
+    }
+
+    .autor-sj{
+        h3{
+            font-size: 35px;
+        }
+
+        p{
+            padding:70px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .autor-dc{
+        h3{
+            font-size: 35px;
+        }
+
+        p{
+            padding:70px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .autor-mm{
+        h3{
+            font-size: 35px;
+        }
+
+        p{
+            padding:70px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .autor-et{
+        h3{
+            font-size: 35px;
+        }
+
+        p{
+            padding:70px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .autor-sp{
+        h3{
+            font-size: 35px;
+        }
+
+        p{
+            padding:70px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .autor-cd{
+        h3{
+            font-size: 35px;
+        }
+
+        p{
+            padding:70px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+
+    .autor-rd{
+        h3{
+            font-size: 35px;
+        }
+
+        p{
+            padding: 70px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
 }

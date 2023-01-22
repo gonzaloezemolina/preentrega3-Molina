@@ -10,7 +10,7 @@
 
 .logo-nosotros{
     width: 100%;
-    padding-top: 10px;
+    padding-top: 20px;
     background-color: black;
     text-align: center;
 }
@@ -35,12 +35,13 @@
     background-size: cover;
     background-repeat: no-repeat;
 
-    display: flex;
-    align-items: center;
-    text-align: center;
     font-family: "Roboto";
     font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 
 /*segundo titulo*/
 .titulo2-nosotros{
@@ -88,4 +89,21 @@
         padding-bottom: 7px;
     }
 
+}
+
+/*----700px---*/
+
+@media(min-width:700px){
+    .texto1-nosotros{
+        padding: 100px;
+        font-size: 20px;
+    }
+    .titulo2-nosotros{
+        padding: 100px;
+        font-size: 20px;
+    }
+    .titulo3-nosotros{
+        padding: 100px;
+        font-size: 20px;
+    }
 }

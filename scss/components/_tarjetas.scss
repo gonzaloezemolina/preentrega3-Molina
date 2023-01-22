@@ -1,30 +1,55 @@
-.tarjeta{
-    width: 200px;
-    height: 400px;
-    padding: 20px;
-    margin-left: 25%;
-    &__contenedor{
-        border: 1px solid black;
+/*estilos de la seccion de productos*/
+.conteiner-productos{
+    padding: 25px;
+    padding-left: 60px;
+    background-image: url(../images/HD-wallpaper-black-and-white-book-page.jpg);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 15px;
+}
 
+.producto{
+    background-color: $color-fondo2;
+    color: white;
+    font-family: "Nunito";
+    width: 250px;
+    height: 415px;
+    border-radius: 7px;
+    border: 1px solid rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    &__tittle{
+        font-size: 18px;
+        padding-top: 3px;
+        padding-bottom: 3px;
     }
-    &__titulo{
-        padding: 15px;
-        text-align: center;
-        font-family: "Roboto";
-        font-size: 12px;
+    &__descripcion{
+        padding-bottom: 10px;
     }
-    &__img{
-        width:100%;
-        height: 250px;
-        text-align: center;
-        padding-bottom: 7px;
-    }
-    &__btn{
-        padding-top: 7px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 25%;
-        margin-bottom: 15px;
+    &__price{
+        font-weight: bold;
     }
 }
+
+.producto svg{
+    margin: 20px 0;
+}
+
+@media(min-width:650px){
+    .conteiner-productos{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+@media(min-width:1000px){
+    .conteiner-productos{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 150px;
+    }
+}
+
+
+

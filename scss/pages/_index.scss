@@ -44,15 +44,6 @@
 
 
 /*---seccion-frasejp--*/
-.seccion-frase-jpeterson{
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 20px;
-
-    display: flex;
-    align-items: center;
-    font-family: "Roboto";
-}
 
 .seccion-frase-jpeterson{
     height: 100vh;
@@ -60,7 +51,38 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    
+    color: white;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 25px;
+    display: flex;
+    align-items: center;
 }
+
+
+/*--seccion que es el lado consciente*/
+
+.seccion-ladoconsciente{
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    h3{
+        text-align: center;
+        font-family: "Roboto";
+        padding-top: 14px;
+        padding-bottom: 18px;
+    }
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Roboto";
+        padding-bottom: 15px;
+        margin-left: 8px;
+    }
+}
+
 
 /*----seccion nuestra mision----*/
 .section2-index{
@@ -86,4 +108,81 @@
 .logo{
     padding-top: 15px;
     text-align: center;
+}
+
+/*menor a 700px*/
+@media(max-width:700px){
+    .seccion-ladoconsciente img{
+    width: 100%;
+    }
+}
+
+/*700px*/
+
+@media(min-width: 700px){
+
+    .section1-index{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+        p{
+            padding: 30px;
+        }
+    }
+
+    .seccion-ladoconsciente{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+        p{
+            padding: 30px;
+        }
+    }
+
+    .section2-index{
+        p{
+            margin-left: 25%;
+            margin-right: 25%;
+        }
+    }
+
+}
+
+
+
+
+/*---1100px*/
+@media(min-width: 1100px){
+
+    .section1-index{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+        h3{
+            font-size: 40px;
+            margin-top: 120px;
+        }
+    }
+
+    .seccion-ladoconsciente{
+        padding: 30px;
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        column-gap: 15px;
+        h3{
+            font-size: 40px;
+            margin-top: 120px;
+        }
+    }
+}
+
+@media(min-width:1100px){
+    .seccion-frase-jpeterson h3{
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
 }

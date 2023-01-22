@@ -1,9 +1,9 @@
-.tarjeta__btn{
+.producto__btn{
     text-align: center;
-    font-family: "Sand";
-    color: black;
-    background-color: white;
+    color: rgb(255, 255, 255);
+    background-color: $color-fondo2;
     width: 50%;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 1px solid rgb(255, 255, 255);
+    margin: 20px 0;
 }

@@ -12,6 +12,10 @@
   font-family: "Sand";
   src: url(../css/Quicksand-VariableFont_wght.ttf);
 }
+@font-face {
+  font-family: "Nunito";
+  src: url(../css/Nunito-VariableFont_wght.ttf);
+}
 header {
   background-color: rgb(0, 0, 0);
   color: white;
@@ -95,45 +99,75 @@ footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+  .titulo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    font-size: 35px;
+  }
+  .links-footer {
+    font-size: 18px;
+  }
 }
-.tarjeta {
-  width: 200px;
-  height: 400px;
-  padding: 20px;
-  margin-left: 25%;
-}
-.tarjeta__contenedor {
-  border: 1px solid black;
-}
-.tarjeta__titulo {
-  padding: 15px;
-  text-align: center;
-  font-family: "Roboto";
-  font-size: 12px;
-}
-.tarjeta__img {
-  width: 100%;
-  height: 250px;
-  text-align: center;
-  padding-bottom: 7px;
-}
-.tarjeta__btn {
-  padding-top: 7px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 25%;
-  margin-bottom: 15px;
+/*estilos de la seccion de productos*/
+.conteiner-productos {
+  padding: 25px;
+  padding-left: 60px;
+  background-image: url(../images/HD-wallpaper-black-and-white-book-page.jpg);
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 15px;
 }
 
-.tarjeta__btn {
+.producto {
+  background-color: rgb(99, 96, 96);
+  color: white;
+  font-family: "Nunito";
+  width: 250px;
+  height: 415px;
+  border-radius: 7px;
+  border: 1px solid rgb(255, 255, 255);
+  padding: 20px;
   text-align: center;
-  font-family: "Sand";
-  color: black;
-  background-color: white;
+}
+.producto__tittle {
+  font-size: 18px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.producto__descripcion {
+  padding-bottom: 10px;
+}
+.producto__price {
+  font-weight: bold;
+}
+
+.producto svg {
+  margin: 20px 0;
+}
+
+@media (min-width: 650px) {
+  .conteiner-productos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1000px) {
+  .conteiner-productos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 150px;
+  }
+}
+.producto__btn {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(99, 96, 96);
   width: 50%;
   border-radius: 10px;
-  border: 1px solid black;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 20px 0;
 }
 
 /*----Portada inicio---*/
@@ -178,20 +212,38 @@ footer {
 
 /*---seccion-frasejp--*/
 .seccion-frase-jpeterson {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  font-size: 20px;
-  display: flex;
-  align-items: center;
-  font-family: "Roboto";
-}
-
-.seccion-frase-jpeterson {
   height: 100vh;
   background-image: url(../images/1\ p_NegfjF8A7rrHpq0B9dJQ.jpeg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  color: white;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+}
+
+/*--seccion que es el lado consciente*/
+.seccion-ladoconsciente {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+}
+.seccion-ladoconsciente h3 {
+  text-align: center;
+  font-family: "Roboto";
+  padding-top: 14px;
+  padding-bottom: 18px;
+}
+.seccion-ladoconsciente p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto";
+  padding-bottom: 15px;
+  margin-left: 8px;
 }
 
 /*----seccion nuestra mision----*/
@@ -220,6 +272,67 @@ footer {
   text-align: center;
 }
 
+/*menor a 700px*/
+@media (max-width: 700px) {
+  .seccion-ladoconsciente img {
+    width: 100%;
+  }
+}
+/*700px*/
+@media (min-width: 700px) {
+  .section1-index {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .section1-index p {
+    padding: 30px;
+  }
+  .seccion-ladoconsciente {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .seccion-ladoconsciente p {
+    padding: 30px;
+  }
+  .section2-index p {
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+/*---1100px*/
+@media (min-width: 1100px) {
+  .section1-index {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .section1-index h3 {
+    font-size: 40px;
+    margin-top: 120px;
+  }
+  .seccion-ladoconsciente {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .seccion-ladoconsciente h3 {
+    font-size: 40px;
+    margin-top: 120px;
+  }
+}
+@media (min-width: 1100px) {
+  .seccion-frase-jpeterson h3 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+}
 /*---Seccion contactanos---*/
 .contactanos {
   background-color: rgb(255, 255, 255);
@@ -299,6 +412,11 @@ footer {
     width: 50%;
   }
 }
+@media (min-width: 1000px) {
+  .form-contacto {
+    width: 30%;
+  }
+}
 .portada-autores {
   height: 100vh;
   background-image: url(../images/Dale-Carnegie.jpg);
@@ -327,7 +445,7 @@ footer {
 /*----secciones de autores----*/
 /*---jordan peterson--*/
 .autor-jp {
-  background-color: rgb(24, 22, 22);
+  background-color: black;
   color: white;
   font-family: "Roboto";
 }
@@ -336,8 +454,10 @@ footer {
   padding-top: 7px;
 }
 .autor-jp p {
-  padding: 5px;
-  text-align: center;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .autor-jp img {
@@ -346,7 +466,7 @@ footer {
 
 /*--spencer johnson--*/
 .autor-sj {
-  background-color: rgb(24, 22, 22);
+  background-color: black;
   color: white;
   font-family: "Roboto";
 }
@@ -355,8 +475,10 @@ footer {
   padding-top: 7px;
 }
 .autor-sj p {
-  padding: 5px;
-  text-align: center;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .autor-sj img {
@@ -365,7 +487,7 @@ footer {
 
 /*--dale carnegie--*/
 .autor-dc {
-  background-color: rgb(24, 22, 22);
+  background-color: black;
   color: white;
   font-family: "Roboto";
 }
@@ -374,8 +496,10 @@ footer {
   padding-top: 7px;
 }
 .autor-dc p {
-  padding: 5px;
-  text-align: center;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .autor-dc img {
@@ -384,7 +508,7 @@ footer {
 
 /*Mark Manson*/
 .autor-mm {
-  background-color: rgb(24, 22, 22);
+  background-color: black;
   color: white;
   font-family: "Roboto";
 }
@@ -393,8 +517,10 @@ footer {
   padding-top: 7px;
 }
 .autor-mm p {
-  padding: 5px;
-  text-align: center;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .autor-mm img {
@@ -403,7 +529,7 @@ footer {
 
 /*ECKhart Tolle*/
 .autor-et {
-  background-color: rgb(24, 22, 22);
+  background-color: black;
   color: white;
   font-family: "Roboto";
 }
@@ -412,8 +538,10 @@ footer {
   padding-top: 7px;
 }
 .autor-et p {
-  padding: 5px;
-  text-align: center;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .autor-et img {
@@ -422,7 +550,7 @@ footer {
 
 /*Steven Pressfield*/
 .autor-sp {
-  background-color: rgb(24, 22, 22);
+  background-color: black;
   color: white;
   font-family: "Roboto";
 }
@@ -431,8 +559,10 @@ footer {
   padding-top: 7px;
 }
 .autor-sp p {
-  padding: 5px;
-  text-align: center;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .autor-sp img {
@@ -441,7 +571,7 @@ footer {
 
 /*Carol Dweck*/
 .autor-cd {
-  background-color: rgb(24, 22, 22);
+  background-color: black;
   color: white;
   font-family: "Roboto";
 }
@@ -450,8 +580,10 @@ footer {
   padding-top: 7px;
 }
 .autor-cd p {
-  padding: 5px;
-  text-align: center;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .autor-cd img {
@@ -460,7 +592,7 @@ footer {
 
 /*Ray Dalio*/
 .autor-rd {
-  background-color: rgb(24, 22, 22);
+  background-color: black;
   color: white;
   font-family: "Roboto";
 }
@@ -469,18 +601,177 @@ footer {
   padding-top: 7px;
 }
 .autor-rd p {
-  padding: 5px;
-  text-align: center;
+  padding: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .autor-rd img {
   width: 100%;
 }
 
+/*700px*/
+@media (min-width: 700px) {
+  .autor-jp {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .autor-jp p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .autor-sj {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .autor-sj p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .autor-dc {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .autor-dc p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .autor-mm {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .autor-mm p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .autor-et {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .autor-et p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .autor-sp {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .autor-sp p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .autor-cd {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .autor-cd p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+  .autor-rd {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 15px;
+  }
+  .autor-rd p {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+}
+/*1100px*/
+@media (min-width: 1100px) {
+  .autor-jp h3 {
+    font-size: 35px;
+  }
+  .autor-jp p {
+    padding: 70px;
+    font-size: 20px;
+  }
+  .autor-sj h3 {
+    font-size: 35px;
+  }
+  .autor-sj p {
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .autor-dc h3 {
+    font-size: 35px;
+  }
+  .autor-dc p {
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .autor-mm h3 {
+    font-size: 35px;
+  }
+  .autor-mm p {
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .autor-et h3 {
+    font-size: 35px;
+  }
+  .autor-et p {
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .autor-sp h3 {
+    font-size: 35px;
+  }
+  .autor-sp p {
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .autor-cd h3 {
+    font-size: 35px;
+  }
+  .autor-cd p {
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+  }
+  .autor-rd h3 {
+    font-size: 35px;
+  }
+  .autor-rd p {
+    padding: 70px;
+    font-size: 20px;
+    text-align: center;
+  }
+}
 /*portada libreria*/
 .portada-libreria {
   height: 100vh;
-  background-image: url(../images/HD-wallpaper-black-and-white-book-page.jpg);
+  background-image: url(../images/alte-buecher-63740688-03b5-47c0-a268-b174ef7a568f.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -493,19 +784,22 @@ footer {
 }
 
 .portada-texto {
-  font-family: "Roboto";
+  font-family: "Sand";
   text-align: center;
-  background-color: white;
-  color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-size: 20px;
   padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-/*productos*/
-.productos {
-  background-color: white;
+@media (min-width: 680px) {
+  .portada-libreria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
-
 /*---titulo nosotros--*/
 .titulo-nosotros {
   text-align: center;
@@ -518,7 +812,7 @@ footer {
 
 .logo-nosotros {
   width: 100%;
-  padding-top: 10px;
+  padding-top: 20px;
   background-color: black;
   text-align: center;
 }
@@ -541,11 +835,11 @@ footer {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: flex;
-  align-items: center;
-  text-align: center;
   font-family: "Roboto";
   font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*segundo titulo*/
@@ -589,6 +883,22 @@ footer {
 }
 .titulo3-nosotros h3 {
   padding-bottom: 7px;
+}
+
+/*----700px---*/
+@media (min-width: 700px) {
+  .texto1-nosotros {
+    padding: 100px;
+    font-size: 20px;
+  }
+  .titulo2-nosotros {
+    padding: 100px;
+    font-size: 20px;
+  }
+  .titulo3-nosotros {
+    padding: 100px;
+    font-size: 20px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

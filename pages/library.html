@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontra los mejores libros de habitos y desarrollo personal en la libreria online de El lado consciente">
     <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" href="../images/386270_preview.ico">
     <title>Libreria</title>
 </head>
@@ -24,82 +26,111 @@
         </nav>
     </header>
     
+
+    <!--Comienzo del contenido principal-->
+
     <main>
         <div class="portada-libreria">
-            <h2>BIENVENIDO A NUESTRA LIBRERIA</h2>
+            <h2 data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1250">BIENVENIDO A NUESTRA LIBRERIA</h2>
         </div>
 
         <section>
             <div class="portada-texto">
-                <p>Aca encontraras los mejores libros de desarrollo personal</p>
+                <h3>Aca encontraras los mejores libros de desarrollo personal</h3>
             </div>
         </section>
 
-        <section class="productos">
-            <div class="tarjeta">
-                <article class="tarjeta__contenedor">
-                    <h3 class="tarjeta__titulo">12 REGLAS PARA VIVIR - JORDAN PETERSON</h3>
-                    <img class="tarjeta__img" src="../images/portada_12-reglas-para-vivir_javier-ruiz-taboada_202008261455.jpg" alt="Libro 12 reglas para vivir">
-                    <a class="tarjeta__btn" href="#">Descargar</a>
-                </article>
+        <section class="conteiner-productos">
+
+            <div class="producto" data-aos="flip-right">
+                <img src="../images/portada_12-reglas-para-vivir_javier-ruiz-taboada_202008261455.jpg" alt="Portada 12 reglas para vivir" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">12 Reglas para vivir - Jordan Peterson</h3>
+                    <span class="producto__price">$5290</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
 
-            <div>
-                <h3>MAS ALLA DEL ORDEN - JORDAN PETERSON</h3>
-                <img>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, in?</p>
-                <a>Descargar</a>
+
+            <div class="producto"data-aos="flip-down">
+                <img src="../images/masalladelorden9788408240730.jpg" alt="portada mas alla del orden" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">Más allá del orden - Jordan Peterson</h3>
+                    <span class="producto__price">$5790</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
 
-            <div>
-                <h3>COMO GANAR AMIGOS E INFLUIR SOBRE LAS PERSONAS - DALE CARNEGIE</h3>
-                <img>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati, blanditiis.</p>
-                <a>Descargar</a>
+            <div class="producto" data-aos="flip-left">
+                <img src="../images/quienquesoc9b44fe286ca7b220ebd2a5a9b5686b.webp" alt="portada ¿quien se ha llevado mi queso?" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">¿Quien se ha llevado mi queso? - Spencer Johnson</h3>
+                    <span class="producto__price">$2490</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
 
-            <div>
-                <h3>¿QUIEN SE HA LLEVADO MI QUESO? - SPENCER JOHNSON</h3>
-                <img>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam, atque.</p>
-                <a>Descargar</a>
+            <div class="producto" data-aos="flip-right">
+                <img src="../images/comoganaramigos2a174ed7b1767b82f5e623db0423aa88faf42f5f400b45ae87a8f0945170faf938892.jpeg" alt="portada como ganar amigos e influir entre las personas" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">Como ganar amigos e influir entre las personas</h3>
+                    <span class="producto__price">$3590</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
 
-            <div>
-                <h3>EL SUTIL ARTE DE QUE TE IMPORTE TODO UN CARAJO - MARK MANSON</h3>
-                <img>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, necessitatibus.</p>
-                <a>Descargar</a>
+            <div class="producto"data-aos="flip-down">
+                <img src="../images/principiosraydalio1wjRUa045L._SX324_BO1,204,203,200_.jpg" alt="portada ¿quien se ha llevado mi queso?" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">Principios - Ray Dalio</h3>
+                    <span class="producto__price">$9690</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
 
-            <div>
-                <h3></h3>
+            <div class="producto" data-aos="flip-left">
+                <img src="../images/ELSUTILARTE41bYtTz2ABL._SY291_BO1,204,203,200_QL40_FMwebp_.webp" alt="portada ¿quien se ha llevado mi queso?" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">El sutil arte de que te importe todo un carajo - Mark Manson</h3>
+                    <span class="producto__price">$3490</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
 
-            <div>
-                <h3>PRINCIPIOS - RAY DALIO</h3>
-                <img>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, quas.</p>
-                <a>Descargar</a>
+            <div class="producto"data-aos="flip-right">
+                <img src="../images/habitos664692.jpg" alt="portada ¿quien se ha llevado mi queso?" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">Habitos Atómicos - James Clear</h3>
+                    <span class="producto__price">$5190</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
 
-            <div>
-                <h3></h3>
-                <img>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat, autem.</p>
+            <div class="producto"data-aos="flip-down">
+                <img src="../images/mindset19nwdB9h+L._AC_SY1000_.jpg" alt="portada ¿quien se ha llevado mi queso?" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">Mindset - Carol Dweck</h3>
+                    <span class="producto__price">$2790</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
 
-            <div>
-                <h3></h3>
-                <img>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, odit.</p>
+            <div class="producto" data-aos="flip-left">
+                <img src="../images/elpoderdelahora52131.jpg" alt="portada ¿quien se ha llevado mi queso?" class="producto__img" width="200px" height="220px">
+                <div class="producto__descripcion">
+                    <h3 class="producto__tittle">El poder del ahora - Eckhart Tolle</h3>
+                    <span class="producto__price">$2690</span>
+                </div>
+                <a href="#" class="producto__btn">Comprar</a>
             </div>
         </section>
-    </main>
 
 
 <!-- Comienzo del footer -->
-    <footer>
+<footer>
+    <div class="contenedor-foot">
         <div class="titulo-footer">
             <h4>EL LADO CONSCIENTE</h4>
         </div>
@@ -120,8 +151,9 @@
             </div>
             <div>
                 <h4>SEGUINOS EN LAS REDES</h4>
+            </div>
             <div class="redes__iconos">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16"> 
                     <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
                 </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -136,10 +168,15 @@
             </div>
             </div>
         </div>
-
+    
         <div class="derechos-footer">
             <small>Gonzalo Molina © 2023, todos los derechos reservados.</small>
         </div>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
