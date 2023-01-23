@@ -19,8 +19,23 @@ nav{
     }
 }
 
-
+/*700px*/
 @media(min-width:700px){
+    h1{
+        margin-right: 25px;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header ul{
+        display: flex;
+        gap: 12px;
+    }
+}
+
+@media(min-width:1100px){
     header{
         display: flex;
         justify-content: space-between;
@@ -34,11 +49,4 @@ nav{
     }
 }
 
-@media(min-width:1100px){
-    header{
-        h1{
-            padding-right: 10px;
-        }
-    }
-}
 
