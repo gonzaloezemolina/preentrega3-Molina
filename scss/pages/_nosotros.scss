@@ -5,12 +5,13 @@
     color:white;
     font-size: 20px;
     font-family: "Roboto";
-    padding-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 15px;
 }
 
 .logo-nosotros{
     width: 100%;
-    padding-top: 20px;
+    padding-top: 12px;
     background-color: black;
     text-align: center;
 }
@@ -35,6 +36,7 @@
     background-size: cover;
     background-repeat: no-repeat;
 
+    color: white;
     font-family: "Roboto";
     font-size: 25px;
     display: flex;
@@ -52,6 +54,7 @@
     color:white;
     h3{
         padding-bottom: 7px;
+        font-size: 32px;
     }
 
 }
@@ -59,7 +62,7 @@
 /*frase2*/
 .frase2-nosotros{
     height: 100vh;
-    background-image: url(../images/dale-carnegie-biography.jpg);
+    background-image: url(../images/loffit-dale-carnegie-guru-de-la-autoayuda-02.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -67,13 +70,9 @@
     display: flex;
     align-items: center;
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     font-family: "Roboto";
-    p{
-        background-color: white;
-        opacity: 0.3;
-    }
 }
 
 
@@ -85,8 +84,13 @@
     text-align: center;
     background-color:$color-fondo;
     color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     h3{
         padding-bottom: 7px;
+        font-size: 32px;
     }
 
 }
@@ -106,4 +110,10 @@
         padding: 100px;
         font-size: 20px;
     }
+}
+
+
+/*-------1000px---*/
+.frase1-nosotros{
+    font-size: 30px;
 }
