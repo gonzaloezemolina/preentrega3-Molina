@@ -127,12 +127,16 @@ footer {
 }
 /*estilos de la seccion de productos*/
 .conteiner-productos {
-  padding: 25px;
-  padding-left: 60px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-image: url(../images/HD-wallpaper-black-and-white-book-page.jpg);
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
   grid-gap: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-items: center;
 }
 
 .producto {
@@ -158,11 +162,7 @@ footer {
   font-weight: bold;
 }
 
-.producto svg {
-  margin: 20px 0;
-}
-
-@media (min-width: 650px) {
+@media (min-width: 580px) {
   .conteiner-productos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -172,7 +172,6 @@ footer {
   .conteiner-productos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-left: 150px;
   }
 }
 .producto__btn {
@@ -685,6 +684,9 @@ footer {
     padding-bottom: 40px;
     text-align: center;
   }
+  .autor-jp img {
+    object-fit: contain;
+  }
   .autor-sj {
     padding: 30px;
     display: grid;
@@ -695,6 +697,9 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+  }
+  .autor-sj img {
+    object-fit: contain;
   }
   .autor-dc {
     padding: 30px;
@@ -707,6 +712,9 @@ footer {
     padding-bottom: 40px;
     text-align: center;
   }
+  .autor-dc img {
+    object-fit: contain;
+  }
   .autor-mm {
     padding: 30px;
     display: grid;
@@ -717,6 +725,9 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+  }
+  .autor-mm img {
+    object-fit: contain;
   }
   .autor-et {
     padding: 30px;
@@ -729,6 +740,9 @@ footer {
     padding-bottom: 40px;
     text-align: center;
   }
+  .autor-et img {
+    object-fit: contain;
+  }
   .autor-sp {
     padding: 30px;
     display: grid;
@@ -739,6 +753,9 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+  }
+  .autor-sp img {
+    object-fit: contain;
   }
   .autor-cd {
     padding: 30px;
@@ -751,6 +768,9 @@ footer {
     padding-bottom: 40px;
     text-align: center;
   }
+  .autor-cd img {
+    object-fit: contain;
+  }
   .autor-rd {
     padding: 30px;
     display: grid;
@@ -761,6 +781,9 @@ footer {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center;
+  }
+  .autor-rd img {
+    object-fit: contain;
   }
 }
 /*1100px*/
